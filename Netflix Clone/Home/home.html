@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Netflix Clone</title>
+    <link rel="icon" type="image/png" href="images/Icons/netflixFaviconLogo.png">
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <div id="top-section">
+      <header>
+        <div class="header-top-left">
+            <nav class="browse-replacement">
+                <ul>
+                  <li><img class = "logo" src = "images/Icons/nexflixLogo.png" alt="Netflix Logo"></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">TV Shows</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">New & Popular</a></li>
+                  <li><a href="#">My List</a></li>
+                  <li> 
+                    <select name="browse" id="browse">
+                      <option value="" disabled selected> Browse </option>
+                      <option value="Home"> Home </option>
+                      <option value="TV-Shows">TV Shows</option>
+                      <option value="Movies"> Movies </option>
+                      <option value="New-and-Popular">New & Popular</option>
+                      <option value="My-list">My List</option>
+                    </select>
+                  </li>
+                </ul>
+            </nav>
+            <div class = "contents">
+              <img class = "movieHeading" src="images/Featured/Nseries-GameOfThrones.png" alt="Wednesday">
+              <div class = "links"></div>
+                <p class="story">
+                      While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, 
+                      thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.</p>
+                      <button id="play-button">Play</button>
+                      <button>More Info</button>
+            </div>
+        </div>
+      
+        <div class="header-top-right">
+            <nav class="browse-replacement">
+              <ul>
+                  <li> <img class="top-right-icons" src="images/icons/search-icon.png"> </li>
+                  <li>
+                    <a href="#">
+                      <input type="text" name="Search" placeholder="Titles, people, genres" id="search-box">
+                    </a>
+                  </li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="../SignIn/signIn.html"> Sign Out </a></li>
+                  <li><a href="#"><img src="images/Icons/bell-icon.png"></a></li>
+                  <li><img class = "avatar"src = "images/Icons/Netflix-avatar.png" alt="avatar"></li>
+                  <li>
+                    <select name="theme">
+                      <option value="" disabled selected></option>
+                      <option value="Kids"> Kids </option>
+                      <option value="Manage Profiles">Manage Profiles</option>
+                      <option value="Transfer Profiles">Transfer Profiles</option>
+                      <option value="Account">Account</option>
+                      <option value="Help Center">Help Center</option>
+                      <!-- <option value="Sign out of Netflix"><a href="../SignIn/signIn.html"> Sign out of Netflix </a></option> -->
+                    </select>
+                  </li>
+                </ul>
+            </nav>
+        </div> 
+      </header>
+      <div class="my-list">
+      <h4>My List</h4>
+      <section class="content-classification">
+        <img src="images/MyList/movie-one.jpg">
+        <img src="images/MyList/movie-two.webp">
+        <img src="images/MyList/movie-three.jpg">
+        <img src="images/MyList/movie-four.webp">
+        <img src="images/MyList/movie-five.webp">
+      </section>
+      </div>
+    </div>
+    <main>
+      <div class ="wrapper">
+        <div class = "rows">
+             <h4 id="trending-now"> Trending Now</h4>
+             <section class = "content-classification">
+               <img src ="images/Trending-now/movie-one.jpeg">
+               <img src ="images/Trending-now/movie-two.jpeg">
+               <img src ="images/Trending-now/movie-three.jpeg">
+               <img src ="images/Trending-now/movie-four.jpeg">
+               <img src="images/Trending-now/movie-five.jpeg">
+             </section>
+             <h4>New Releases</h4>
+             <section class = "content-classification">
+              <img src ="images/New-releases/movie-one.png">
+               <img src ="images/New-releases/movie-two.png">
+               <img src ="images/New-releases/movie-three.webp">
+               <img src ="images/New-releases/movie-four.jpg">
+               <img src="images/New-releases/movie-five.webp">
+             </section>
+             <h4>Romantic Movies</h4>
+            <section class = "content-classification">
+              <img src ="images/MyList/movie-five.webp">
+               <img src ="images/MyList/movie-four.webp">
+               <img src ="images/MyList/movie-three.jpg">
+               <img src ="images/MyList/movie-two.webp">
+               <img src="images/MyList/movie-one.jpg">
+            </section>
+            <h4>Comedies</h4>
+             <section class = "content-classification">
+              <img src ="images/Trending-now/movie-five.jpeg">
+               <img src ="images/Trending-now/movie-four.jpeg">
+               <img src ="images/Trending-now/movie-three.jpeg">
+               <img src ="images/Trending-now/movie-two.jpeg">
+               <img src="images/Trending-now/movie-one.jpeg">
+             </section>
+             <h4>Only on Netflix</h4>
+             <section class = "content-classification">
+              <img src ="images/New-releases/movie-five.webp">
+               <img src ="images/New-releases/movie-four.jpg">
+               <img src ="images/New-releases/movie-three.webp">
+               <img src ="images/New-releases/movie-two.png">
+               <img src="images/New-releases/movie-one.png">
+             </section>
+          </div>        
+        </div>     
+      </main>
+
+      <footer>
+          <nav id="social-media">
+            <ul>
+              <li><a href="#"><img src="images/Social media icons/facebook icon.png"></a></li>
+              <li><a href="#"><img src="images/Social media icons/instagram icon.png"></a></li>
+              <li><a href="#"><img src="images/Social media icons/twitter icon.png"></a></li>
+              <li><a href="#"><img src="images/Social media icons/youtube icon.png"></a></li>
+            </ul>
+          </nav> 
+          <nav id="more-options">
+              <ul>
+                  <li><a href="#">Audio Description</a></li>
+                  <li><a href="#">Help Center</a></li> 
+                  <li><a href="#">Gift Cards</a></li>
+                  <li><a href="#">Media Centre</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Legal Notices</a></li>
+                  <li><a href="#">Cookie Preferences</a></li>
+                  <li><a href="#">Corporate Information</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </nav>
+          <p id="copyright"> &copy; 1997-2022 Netflix, Inc. </p>
+        </footer>
+  </body>
+</html>

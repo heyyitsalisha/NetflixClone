@@ -1,0 +1,321 @@
+/* Styles for Desktop Layout Go here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
+
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    color: white;
+    height: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    height: 140px;
+}
+
+#top-section{
+    background: url('images/Featured/Nseries-GameOfThrones-background.jpeg');
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.300);
+}
+
+.logo {
+    width: 150px;
+    height:70px;   
+    margin-top: 15px;
+    margin-left: 7px;
+}
+
+.avatar {
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    margin-top:5px;
+    margin-right: 10px;
+    margin-left: -2px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left nav ul{
+    display: flex;
+	flex-direction: row;
+	align-items:center;
+	list-style-type: none;
+    margin-top: -5px;
+    margin-right: -70px;
+}
+
+.header-top-right nav ul{
+    display: flex;
+	flex-direction: row;
+	align-items:center;
+	list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+       margin: 7px;
+       font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.movieHeading {
+    width: 500px;
+    margin: 120px 0px -20px -20px;
+}
+
+.contents {
+    margin-left: 60px;
+}
+
+button {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    padding: 12px 40px;
+    margin-right: 5px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.375);
+}
+
+#play-button{
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-color:rgba(255, 255, 255, 0.21);
+    transition: all 0.2s;
+}
+
+#play-button:hover{
+    background-color: rgba(255, 255, 255, 0.703);
+}
+
+.story {
+    width: 450px;
+    font-size: 15px;
+    font-weight:300;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+   
+}
+
+.content-classification img{
+    width:19%;
+    margin:3px;
+    border-radius: 4px;
+    margin-top: -12px;
+}
+
+.content-classification{
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+section {
+    max-height:30%;
+}
+
+h4{
+    margin-left: 25px;
+}
+
+section {
+    width:97%;
+    display: flex;
+}
+
+section img {
+    transition: transform 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.4, 1.4);
+}
+
+footer {
+    margin: 20px 15px 20px 150px;
+}
+
+footer ul {
+    list-style: none;
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    width: 90%;
+}
+
+footer li a{
+    color: grey;
+    font-size: 13px;
+}
+
+footer li a:hover{
+    text-decoration: underline;
+}
+
+#social-media img{
+    height: 25px;
+    width: 25px;
+}
+#more-options li {
+    display: block;
+    height: 100x;
+    width: 20%;
+    padding:2px;
+    font-size: 15px;
+    color: rgba(130, 130, 130, 0.897);
+}
+
+#copyright{
+ padding-left: 50px;
+ margin-top: 10px;
+ color: rgba(130, 130, 130, 0.897);
+}
+
+#more-options{
+    margin-top: -80px;
+}
+
+.header-top-right select {
+    border: none;
+    height: 12px;
+    width: 15px;
+    background-color: transparent;
+    color: white;
+    margin-left: -25px;
+    outline: none;
+}
+
+header{
+    padding-bottom: 490px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .6), transparent 60%);
+}
+
+.my-list{
+    background: linear-gradient(90deg, rgba(0, 0, 0, .6), transparent 60%);
+    margin-top: -21.5px;
+    padding-left: 10px;
+}
+
+.my-list h4{
+    margin-left: 25px;
+}
+
+#search-box{
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 4.5px;
+    outline: none;
+    height: 20px;
+    width: 120px;
+    font-size: 10px;
+    margin-left: 4px;
+    margin-right: -4px;
+}
+
+.top-right-icons{
+    height: 18px;
+    width: 18px;
+    margin-right: -15px;
+}
+
+#trending-now{
+    margin-top: 10px;
+}
+
+#browse {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+
+
+
+/*This is a media query for mobile layout; it's saying that the following styles will not 
+take effect when the window is over 800px in width.*/
+@media screen and (max-width: 800px)
+{
+    
+    .browse-replacement {
+        visibility: hidden;
+    }
+
+    .logo, #browse {
+        visibility:visible;
+    }
+
+    #browse{
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        outline: none;
+        padding: 2px;
+        height: 25px;
+        width: 80px;
+        font-size: 15px;
+        margin-left: -300px;
+    }
+
+    header{
+        height: 5px;
+    }
+
+    .story {
+        width: 350px;
+        font-size: 13px;
+        font-weight:300;
+    }
+
+    .content-classification img{
+        width:30%;
+        height:30%;
+    }
+
+    .content-classification img:nth-of-type(5n), .content-classification img:nth-of-type(4n){
+        display: none;
+    }
+
+    footer {
+    margin: auto;
+    }
+
+    #more-options li {
+        width: 40%;
+        font-size: 12px;
+    }
+
+}
+
+
+
